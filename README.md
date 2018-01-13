@@ -165,7 +165,21 @@ python configure.py --account_sid ACxxxxxx --auth_token yyyyyyy
 3) For local development, copy/paste the environment variable commands the
 configurator provides to your shell.
 <pre>
-export TWILIO_ACCOUNT_SID=ACxxxxxx
+export TWILIO_ACCOUNT_SID=3.6/site-packages
+Craigs-MacBook-Pro:Twilio-Hackpack-for-Heroku-and-Flask crubino$ ls
+LICENSE                 Procfile                app.py                  requirements.txt        tox.ini
+MANIFEST.in             README.md               configure.py            setup.py
+Makefile                app.json                hackpack                tests
+Craigs-MacBook-Pro:Twilio-Hackpack-for-Heroku-and-Flask crubino$ python install setup.py
+python: can't open file 'install': [Errno 2] No such file or directory
+Craigs-MacBook-Pro:Twilio-Hackpack-for-Heroku-and-Flask crubino$ pip3 install setup.py
+Collecting setup.py
+  Could not find a version that satisfies the requirement setup.py (from versions: )
+No matching distribution found for setup.py
+Craigs-MacBook-Pro:Twilio-Hackpack-for-Heroku-and-Flask crubino$ hackpack
+bash: hackpack: command not found
+Craigs-MacBook-Pro:Twilio-Hackpack-for-Heroku-and-Flask crubino$ python configure.py 
+
 export TWILIO_AUTH_TOKEN=yyyyyyyyy
 export TWILIO_APP_SID=APzzzzzzzzzz
 export TWILIO_CALLER_ID=+15556667777
