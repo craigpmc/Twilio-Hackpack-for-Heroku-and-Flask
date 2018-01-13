@@ -2,14 +2,13 @@
 Configuration Settings
 '''
 
-''' Uncomment to configure using the file.  
-WARNING: Be careful not to post your account credentials on GitHub.
 
-TWILIO_ACCOUNT_SID = "ACxxxxxxxxxxxxx" 
-TWILIO_AUTH_TOKEN = "yyyyyyyyyyyyyyyy"
-TWILIO_APP_SID = "APzzzzzzzzz"
-TWILIO_CALLER_ID = "+17778889999"
-'''
+TWILIO_ACCOUNT_SID ="AC1ee8aced4be4989b75a6447d42731393"
+
+TWILIO_AUTH_TOKEN = ae844c87d32e7b8c1bf9a8ee8b90af54
+TWILIO_APP_SID = G132e662e82903159cd814c78879ca6c7
+TWILIO_CALLER_ID = "+17274980879"
+
 
 # Begin Heroku configuration - configured through environment variables.
 import os
